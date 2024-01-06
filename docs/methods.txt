@@ -1,0 +1,43 @@
+Implementation of Ising Models
+    Exact Ising Model
+	[Insert implementation details Exact model]
+    Mean Field-Approximation
+	[Insert implementation details MF model]
+    Belief Propogation
+	[Insert implementation details BP model]
+
+Root Mean Squared Error(RMS) fully-connected model
+    Model Parameters
+	- Fully conneczted, c = 1
+	- 20 spins, n = 20
+	- No external field, J0 = 0
+	- J_th = J = beta (?)
+
+    Compute RMS error in mean values for exact-bp & exact-mf
+	- For each β, estimate the RMS errors in multiple random instances of the Ising model and compute the mean and std 
+	- Plot the RMS errors (mean and standard deviation) as a function of β for 0 < β ≤ 2. 
+	- Find that the algorithms converge in several hundred iterations using smoothing η = 0.5.
+	- Compare to ./bp_mf_exact fig 1
+	[Which figures]
+	    
+	
+    Compute RMS error in  correlations for exact-bp & exact-mf
+	- Get correlation MF using linear correction
+	- Get correlation BP by using formula given and joint probablity after convergence
+	For each β: 0 < β ≤ 2, in multiple random instances of Ising model calculate:
+	    - RMS error cor(exact) - cor(MF)
+	    - RMS error cor(exact) - cor(BP)
+	- Compute mean and STD(?)
+	- Plot the RMS errors (mean and standard deviation) as a function of β for 0 < β ≤ 2. (see fig1)
+	[Which figures]
+	    
+
+Root Mean Squared Error(RMS) sparse model
+    Model Parameters
+    	20, spins n = 20
+	sparisty between 0 and 1,  0 < c ≤ 1
+	beta between 0 and 1, 0 < β ≤ 1
+	threshold higher then 0, θ > 0
+
+    [RMS error for what]
+    [Which figures do you want]

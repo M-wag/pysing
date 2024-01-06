@@ -1,0 +1,3 @@
+Methods
+    Figure out which figures to add
+    What error they want for the sparse model
